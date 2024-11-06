@@ -120,6 +120,48 @@ investment-calculator/
 └── README.md
 ```
 
+## Configuration
+
+This application uses environment variables for sensitive configuration. Before running the application, make sure to set up the following environment variables:
+
+### Required Environment Variables
+```bash
+# Required
+export SECRET_KEY='your-secure-secret-key'  # Required for Flask sessions and security
+
+# Optional (defaults provided)
+export FLASK_ENV='development'              # or 'production'
+export CACHE_TYPE='simple'                  # or 'redis' for production
+export LOG_LEVEL='INFO'                     # or 'DEBUG' for development
+```
+
+### Development Setup
+```bash
+# Quick setup for development
+export FLASK_ENV=development
+export SECRET_KEY='dev-secret-key'  # Only for development!
+export CACHE_TYPE='simple'
+export LOG_LEVEL='DEBUG'
+```
+
+### Production Setup
+```bash
+# Production settings (example)
+export FLASK_ENV=production
+export SECRET_KEY='your-very-secure-production-key'
+export CACHE_TYPE='redis'
+export LOG_LEVEL='INFO'
+```
+
+### Redis Configuration
+By default, the application expects Redis to be running locally with default settings:
+- Broker URL: redis://localhost:6379/1
+- Result Backend: redis://localhost:6379/2
+- Cache URL: redis://localhost:6379/0
+
+For production, these can be overridden using environment variables if needed.
+
+
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 

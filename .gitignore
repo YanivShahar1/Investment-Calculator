@@ -132,6 +132,3 @@ node_modules/
 
 # Project specific directories
 CodeSum/
-
-# Configuration
-config.py
