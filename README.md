@@ -3,9 +3,22 @@
 ## Overview
 A sophisticated web application that enables users to simulate and compare investment growth across multiple stocks over time. Built with Flask and modern JavaScript, this tool helps investors understand potential returns through interactive visualizations and detailed analytics.
 
+## Demo :
 <p align="center">
-  <img src="docs/images/graph-demo.png" alt="Investment Calculator Graph" width="800"/>
+  <img src="docs/images/graph-demo1.1.png" alt="Investment Calculator Graph" width="800"/>
 </p>
+<p align="center">
+  <img src="docs/images/graph-demo1.png" alt="Investment Calculator Graph" width="800"/>
+</p>
+
+<!-- ## Demo Video
+Watch a quick demonstration of the Investment Calculator in action:
+
+<p align="center">
+  <a href="docs/videos/demo.mp4">
+    <img src="docs/images/video-thumbnail.png" alt="Demo Video" width="600"/>
+  </a>
+</p> -->
 
 <!-- <p align="center">
   <img src="docs/images/results-demo.png" alt="Investment Calculator Results" width="800"/>
