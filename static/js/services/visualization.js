@@ -1,7 +1,23 @@
 export class VisualizationService {
     static createPlotConfig(data) {
         const traces = [];
-        const colors = ['#2E86C1', '#E74C3C', '#2ECC71', '#F1C40F', '#9B59B6'];
+        const colors = [
+            '#003f5c',  // Navy Blue
+            '#ff3030',  // Fire Engine Red
+            '#1a9850',  // Emerald Green
+            '#ffa600',  // Amber
+            '#8e44ad',  // Deep Purple
+            '#00b4d8',  // Cerulean Blue
+            '#ff6b6b',  // Salmon Pink
+            '#4c9900',  // Apple Green
+            '#9d4edd',  // Violet
+            '#ff7c43',  // Tangerine
+            '#087e8b',  // Teal Blue
+            '#c1121f',  // Ruby Red
+            '#4361ee',  // Royal Blue
+            '#ff4d6d',  // Hot Pink
+            '#38b000'   // Kelly Green
+        ];
 
         data.forEach((stockData, index) => {
             const timeData = stockData.monthly_data || stockData.yearly_data;

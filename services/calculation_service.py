@@ -32,6 +32,7 @@ class CalculationService:
             current_investment = initial
             last_investment_date = None
             
+            
             # Process data year by year
             for year in range(start_year, end_year + 1):
                 yearly_data = stock_data[stock_data.index.year == year]

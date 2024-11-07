@@ -4,8 +4,12 @@
 A sophisticated web application that enables users to simulate and compare investment growth across multiple stocks over time. Built with Flask and modern JavaScript, this tool helps investors understand potential returns through interactive visualizations and detailed analytics.
 
 <p align="center">
-  <img src="docs/images/demo.png" alt="Investment Calculator Demo" width="800"/>
+  <img src="docs/images/graph-demo.png" alt="Investment Calculator Graph" width="800"/>
 </p>
+
+<!-- <p align="center">
+  <img src="docs/images/results-demo.png" alt="Investment Calculator Results" width="800"/>
+</p> -->
 
 ## Key Features
 - **Multi-Stock Comparison**: Compare performance of multiple stocks simultaneously
@@ -175,6 +179,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- [Yahoo Finance API](https://finance.yahoo.com/)
+- [yfinance API](https://pypi.org/project/yfinance/) - Python library for Yahoo Finance data
 - [Plotly](https://plotly.com/)
 - [Flask](https://flask.palletsprojects.com/)

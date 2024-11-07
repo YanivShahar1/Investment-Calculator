@@ -87,9 +87,11 @@ def generate_data_points(initial, start_year, end_year, stocks, addition_amount,
                     
                     # Apply annual inflation adjustment
                     current_value *= (1 - annual_inflation)
+                    current_investment *= (1 - annual_inflation)
                     
                     logger.info(
-                        f"  After adjustment: value=${current_value:.2f}\n"
+                        f"  After adjustment: current_value=${current_value:.2f}\n"
+                        f"  After adjustment: current_investment=${current_investment:.2f}\n"
                         f"  Value decrease due to inflation: ${(current_value / (1 - annual_inflation) - current_value):.2f}"
                     )
                     last_year_processed = year

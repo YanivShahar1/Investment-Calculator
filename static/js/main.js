@@ -221,8 +221,10 @@ class InvestmentCalculator {
                 if (warning.status === 'all_null' || warning.status === 'no_valid_data') {
                     warningMessage = 'Invalid symbol or no data available';
                 } else if (warning.status === 'partial_data' && warning.first_valid_date) {
-                    const startYear = warning.first_valid_date.split('-')[0];
-                    warningMessage = `Data available since ${startYear}`;
+                    const [year, month] = warning.first_valid_date.split('-');
+                    // Convert month number to month name
+                    const monthName = new Date(year, month - 1).toLocaleString('en-US', { month: 'long' });
+                    warningMessage = `Data available since ${monthName} ${year}`;
                 } else if (warning.error) {
                     warningMessage = warning.error;
                 } else {
